@@ -24,3 +24,9 @@ frontend/yarn-debug.log*
 frontend/yarn-error.log*
 frontend/build/
 frontend/.idea/
+
+# Ignore everything in the 'data' directory
+data/*
+
+# Except for the 'init.sql' file
+!data/initial.sql

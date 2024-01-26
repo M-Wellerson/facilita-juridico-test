@@ -24,11 +24,11 @@
 `make logs`: Exibe os registros dos contêineres em execução, incluindo logs do servidor web e do servidor nginx.
 
 ## Outros sistemas
-1. Execute os comandos nesta sequência:
+1. Execute os comandos nesta sequência: \
 `docker compose up -d` \
 `docker compose exec front-end npm install` \
 `docker compose exec back-end npm install` \
-`docker compose exec db psql -U postgres -d postgres -a -f /var/lib/postgresql/data/initial.sql;` \
+`docker compose exec db psql -U postgres -d postgres -a -f /var/lib/postgresql/data/initial.sql;`
 
 2. Agora visite http://localhost:8000/ e o site estará de pé.
 
