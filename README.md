@@ -34,7 +34,7 @@
 
 ### Comandos para o gereciamento do ambiente
 
-`docker compose up -d`: Inicializa o ambiente de desenvolvimento, levantando os contêineres.
+`docker-compose up --build -d`: Inicializa o ambiente de desenvolvimento, levantando os contêineres.
 
 `docker compose down`: Desliga o ambiente de desenvolvimento, interrompendo os contêineres.
 

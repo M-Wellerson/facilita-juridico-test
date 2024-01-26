@@ -40,6 +40,7 @@ services:
     tty: true
     volumes:
       - ./data:/var/lib/postgresql/data
+      - ./initDataBase/init.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
       - POSTGRES_PASSWORD=1234
     ports:

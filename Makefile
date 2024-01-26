@@ -2,10 +2,10 @@ DB_NAME=postgres
 
 .PHONY: install
 install:
-	docker compose up -d; \
+	docker-compose up --build -d; \
+	docker compose exec back-end npm install; \
     docker compose exec front-end npm install; \
-    docker compose exec back-end npm install; \
-	docker compose exec db psql -U postgres -d $(DB_NAME) -a -f /var/lib/postgresql/data/initial.sql; \
+	docker compose exec db psql -U postgres -d $(DB_NAME) -a -f /docker-entrypoint-initdb.d/init.sql; \
 
 .PHONY: up
 up:
